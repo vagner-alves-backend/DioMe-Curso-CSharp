@@ -1,3 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 Console.WriteLine("Olá, mundo! Esse é meu primeiro comando em C# -- Inicio dos meus estudos com a dio.me...");
+Console.WriteLine("TESTE -- GitHub");
