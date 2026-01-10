@@ -1,0 +1,15 @@
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\lacosDeRepeticao\lacosRepeticao\bin\Debug\net10.0\lacosRepeticao.exe
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\lacosDeRepeticao\lacosRepeticao\bin\Debug\net10.0\lacosRepeticao.deps.json
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\lacosDeRepeticao\lacosRepeticao\bin\Debug\net10.0\lacosRepeticao.runtimeconfig.json
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\lacosDeRepeticao\lacosRepeticao\bin\Debug\net10.0\lacosRepeticao.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\lacosDeRepeticao\lacosRepeticao\bin\Debug\net10.0\lacosRepeticao.pdb
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\lacosDeRepeticao\lacosRepeticao\obj\Debug\net10.0\lacosRepeticao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\lacosDeRepeticao\lacosRepeticao\obj\Debug\net10.0\lacosRepeticao.AssemblyInfoInputs.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\lacosDeRepeticao\lacosRepeticao\obj\Debug\net10.0\lacosRepeticao.AssemblyInfo.cs
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\lacosDeRepeticao\lacosRepeticao\obj\Debug\net10.0\lacosRepeticao.csproj.CoreCompileInputs.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\lacosDeRepeticao\lacosRepeticao\obj\Debug\net10.0\lacosRepeticao.sourcelink.json
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\lacosDeRepeticao\lacosRepeticao\obj\Debug\net10.0\lacosRepeticao.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\lacosDeRepeticao\lacosRepeticao\obj\Debug\net10.0\refint\lacosRepeticao.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\lacosDeRepeticao\lacosRepeticao\obj\Debug\net10.0\lacosRepeticao.pdb
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\lacosDeRepeticao\lacosRepeticao\obj\Debug\net10.0\lacosRepeticao.genruntimeconfig.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\lacosDeRepeticao\lacosRepeticao\obj\Debug\net10.0\ref\lacosRepeticao.dll
