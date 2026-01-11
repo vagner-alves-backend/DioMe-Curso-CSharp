@@ -1,0 +1,15 @@
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\Solution-sln\MenuDeAcesso\bin\Debug\net10.0\MenuDeAcesso.exe
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\Solution-sln\MenuDeAcesso\bin\Debug\net10.0\MenuDeAcesso.deps.json
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\Solution-sln\MenuDeAcesso\bin\Debug\net10.0\MenuDeAcesso.runtimeconfig.json
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\Solution-sln\MenuDeAcesso\bin\Debug\net10.0\MenuDeAcesso.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\Solution-sln\MenuDeAcesso\bin\Debug\net10.0\MenuDeAcesso.pdb
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\Solution-sln\MenuDeAcesso\obj\Debug\net10.0\MenuDeAcesso.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\Solution-sln\MenuDeAcesso\obj\Debug\net10.0\MenuDeAcesso.AssemblyInfoInputs.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\Solution-sln\MenuDeAcesso\obj\Debug\net10.0\MenuDeAcesso.AssemblyInfo.cs
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\Solution-sln\MenuDeAcesso\obj\Debug\net10.0\MenuDeAcesso.csproj.CoreCompileInputs.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\Solution-sln\MenuDeAcesso\obj\Debug\net10.0\MenuDeAcesso.sourcelink.json
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\Solution-sln\MenuDeAcesso\obj\Debug\net10.0\MenuDeAcesso.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\Solution-sln\MenuDeAcesso\obj\Debug\net10.0\refint\MenuDeAcesso.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\Solution-sln\MenuDeAcesso\obj\Debug\net10.0\MenuDeAcesso.pdb
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\Solution-sln\MenuDeAcesso\obj\Debug\net10.0\MenuDeAcesso.genruntimeconfig.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\.Net--\_Modulos\Solution-sln\MenuDeAcesso\obj\Debug\net10.0\ref\MenuDeAcesso.dll
