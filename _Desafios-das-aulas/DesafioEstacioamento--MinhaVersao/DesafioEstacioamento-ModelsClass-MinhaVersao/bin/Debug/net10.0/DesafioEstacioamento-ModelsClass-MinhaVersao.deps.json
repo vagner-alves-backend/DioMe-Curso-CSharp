@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "DesafioEstacioamento-ModelsClass-MinhaVersao/1.0.0": {
+        "runtime": {
+          "DesafioEstacioamento-ModelsClass-MinhaVersao.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DesafioEstacioamento-ModelsClass-MinhaVersao/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
