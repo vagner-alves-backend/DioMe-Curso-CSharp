@@ -6,6 +6,12 @@ ToAddVehicle add = new()
     ParkingSpaces = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 };
 
+ListVacancyParking list = new()
+{
+    Name = ["Null", "Null", "Null", "Null", "Null", "Null", "Null", "Null", "Null", "Null"],
+    Vehicle = ["Null", "Null", "Null", "Null", "Null", "Null", "Null", "Null", "Null", "Null"],
+    Vacancy = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+};
 
 bool finishTask = false;
 bool optionValid = false;
@@ -57,7 +63,13 @@ do
                 vacancy++;
                 Console.WriteLine($"Sua vaga é a --{vacancy}");
                 add.ParkingSpaces[parkingFree] = vacancy;
+                list.Vacancy[parkingFree] = vacancy;
+                list.Name[parkingFree] = add.Name;
             }
             break;
+        
+        case 4:
+            list.PrintDataParking();
+            break;
     }
-} while (finishTask);
+} while (!finishTask);
