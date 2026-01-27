@@ -7,9 +7,9 @@ namespace EstudandoMetodos_Main_Dio.me.Models
 {
     public class Pessoa(string? name, string? curso)
     {
+        public Pessoa() : this("NaN", "NaN"){}
         private string? _name = name;
         private string? _curso = curso;
-        //protected Pessoa GetAluno() => new(_name, _curso);
         public string? GetAlunoName() => _name;
         public string? GetAlunoCurso() => _curso;
 

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace EstudandoMetodos_Main_Dio.me.Models
 {
-    public class Curso
+    public class Curso : Pessoa
     {
         //private readonly string? _curso;
         public List<Pessoa> Aluno = [];

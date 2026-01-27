@@ -1,12 +1,9 @@
 ﻿using EstudandoMetodos_Main_Dio.me.Models;
 
-Pessoa pessoa;
 Curso matriculas = new();
 bool continuar = true;
 
 string? opcaoMenu = "";
-string? name = "";
-string? curso = "";
 Console.Clear();
 do
 {
@@ -23,17 +20,22 @@ do
     {
         case "1":
             Console.Write("Name..: ");
-            name = Console.ReadLine();
+            matriculas.SetAlunoName(Console.ReadLine());
             Console.Write("Curso.: ");
-            curso = Console.ReadLine();
-            pessoa = new(name, curso);
-            matriculas.AdicionarAluno(pessoa);
+            matriculas.SetAlunoCurso(Console.ReadLine());
+            matriculas.Aluno.Add(new(name: matriculas.GetAlunoName(), curso: matriculas.GetAlunoCurso()));
             break;
         case "2":
             matriculas.ListaAlunos();
             break;
         case "3":
-            matriculas.RemoverAluno(matriculas.Aluno[0]);
+            if (matriculas.QuantidadeDeMatriculas() < 1)
+            {
+                Console.WriteLine("\t-Não a registros.");
+            } else
+            {
+                matriculas.RemoverAluno(matriculas.Aluno[matriculas.QuantidadeDeMatriculas() -1]);
+            }
             break;
         case "4":
             continuar = false;
