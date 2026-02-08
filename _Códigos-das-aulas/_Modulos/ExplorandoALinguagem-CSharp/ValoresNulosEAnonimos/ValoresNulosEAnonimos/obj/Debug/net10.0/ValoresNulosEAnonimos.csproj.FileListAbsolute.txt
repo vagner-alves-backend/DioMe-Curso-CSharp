@@ -13,3 +13,6 @@ C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aula
 C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ValoresNulosEAnonimos\ValoresNulosEAnonimos\obj\Debug\net10.0\ValoresNulosEAnonimos.pdb
 C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ValoresNulosEAnonimos\ValoresNulosEAnonimos\obj\Debug\net10.0\ValoresNulosEAnonimos.genruntimeconfig.cache
 C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ValoresNulosEAnonimos\ValoresNulosEAnonimos\obj\Debug\net10.0\ref\ValoresNulosEAnonimos.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ValoresNulosEAnonimos\ValoresNulosEAnonimos\bin\Debug\net10.0\Newtonsoft.Json.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ValoresNulosEAnonimos\ValoresNulosEAnonimos\obj\Debug\net10.0\ValoresNulosEAnonimos.csproj.AssemblyReference.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ValoresNulosEAnonimos\ValoresNulosEAnonimos\obj\Debug\net10.0\ValoresN.BE600D1C.Up2Date
