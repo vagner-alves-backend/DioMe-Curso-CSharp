@@ -1,0 +1,15 @@
+C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ClassGenericas\ClassGenericas\bin\Debug\net10.0\ClassGenericas.exe
+C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ClassGenericas\ClassGenericas\bin\Debug\net10.0\ClassGenericas.deps.json
+C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ClassGenericas\ClassGenericas\bin\Debug\net10.0\ClassGenericas.runtimeconfig.json
+C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ClassGenericas\ClassGenericas\bin\Debug\net10.0\ClassGenericas.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ClassGenericas\ClassGenericas\bin\Debug\net10.0\ClassGenericas.pdb
+C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ClassGenericas\ClassGenericas\obj\Debug\net10.0\ClassGenericas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ClassGenericas\ClassGenericas\obj\Debug\net10.0\ClassGenericas.AssemblyInfoInputs.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ClassGenericas\ClassGenericas\obj\Debug\net10.0\ClassGenericas.AssemblyInfo.cs
+C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ClassGenericas\ClassGenericas\obj\Debug\net10.0\ClassGenericas.csproj.CoreCompileInputs.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ClassGenericas\ClassGenericas\obj\Debug\net10.0\ClassGenericas.sourcelink.json
+C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ClassGenericas\ClassGenericas\obj\Debug\net10.0\ClassGenericas.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ClassGenericas\ClassGenericas\obj\Debug\net10.0\refint\ClassGenericas.dll
+C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ClassGenericas\ClassGenericas\obj\Debug\net10.0\ClassGenericas.pdb
+C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ClassGenericas\ClassGenericas\obj\Debug\net10.0\ClassGenericas.genruntimeconfig.cache
+C:\Users\Vágner Alves\OneDrive\Documentos\DioMe-Curso-CSharp\_Códigos-das-aulas\_Modulos\ExplorandoALinguagem-CSharp\ClassGenericas\ClassGenericas\obj\Debug\net10.0\ref\ClassGenericas.dll

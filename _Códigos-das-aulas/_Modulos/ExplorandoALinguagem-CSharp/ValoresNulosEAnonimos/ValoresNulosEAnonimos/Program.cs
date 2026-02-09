@@ -40,3 +40,6 @@ foreach (var element in listAnonimo)
 {
     Console.WriteLine($"{element.Name} tem {element.Idade} anos.");
 }
+
+dynamic variavel = "string";
+variavel = 1;

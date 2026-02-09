@@ -1,9 +1,7 @@
-﻿bool _continue = false;
-string? numberText = "";
-int number = 0;
-int resultado = 0;
-
+﻿using EstudandoTernarios.Models;
 Console.Clear();
+
+string? numberText = "";
 do
 {
     Console.Write("Informe um number par..: ");
@@ -14,9 +12,7 @@ do
         Console.Write("O valor informado não é um number,\nFavor informe um numbe -> ");
         numberText = Console.ReadLine();
     }
-    number = Convert.ToInt32(numberText);
-    resultado = number % 2;
 
-    Console.WriteLine($"O número {number} é {(resultado == 0 ? "par" : "Impar")}");
-    _continue = number % 2 == 1;
-} while (_continue);
+    Console.WriteLine($"O número {numberText} é {(Convert.ToInt32(numberText).EhPar() ? "par" : "Impar")}");
+} while (!Convert.ToInt32(numberText).EhPar());
+
