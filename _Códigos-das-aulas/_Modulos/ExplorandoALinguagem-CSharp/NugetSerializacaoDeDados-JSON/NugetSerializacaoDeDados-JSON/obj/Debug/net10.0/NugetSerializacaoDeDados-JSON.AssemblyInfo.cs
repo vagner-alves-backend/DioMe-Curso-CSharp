@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NugetSerializacaoDeDados-JSON")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3abec93fdd9b0fe9da93163ae28375ec1d16547a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+043a13519b5bc2fa0806c8a662cd7e61943f6230")]
 [assembly: System.Reflection.AssemblyProductAttribute("NugetSerializacaoDeDados-JSON")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NugetSerializacaoDeDados-JSON")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
