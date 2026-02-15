@@ -9,6 +9,6 @@ namespace HospedagemDeHotel_MinhaVersao.Models
     {
         public string? Name = name;
         public string? Sobrenome = sobrenome;
-        public Pessoa() : this ("Nome", "Sobrenome") {}
+        public Pessoa() : this ("NaN", "NaN") {}
     }
 }

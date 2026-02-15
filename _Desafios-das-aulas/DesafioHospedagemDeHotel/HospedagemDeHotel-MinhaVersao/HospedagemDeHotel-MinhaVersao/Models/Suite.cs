@@ -11,6 +11,6 @@ namespace HospedagemDeHotel_MinhaVersao.Models
         public string? Tiposuite = tiposuite;
         public int Capacidade = capacidade;
         public decimal Valordiaria = valordiaria;
-        public Suite() : this ("Andar 102", 5, 254.98M) {}
+        public Suite() : this ("Master", 5, 149.99M) {}
     }
 }
