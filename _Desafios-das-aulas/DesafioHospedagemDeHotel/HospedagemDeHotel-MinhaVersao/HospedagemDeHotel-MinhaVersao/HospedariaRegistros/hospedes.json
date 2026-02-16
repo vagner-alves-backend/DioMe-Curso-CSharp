@@ -1,0 +1,47 @@
+[
+  {
+    "Nome": "Vágner",
+    "Sobrenome": "Alves",
+    "Suite": "Master",
+    "QuantidadeSuites": 1,
+    "QuantidadePessoas": 3,
+    "DiasReservados": 9,
+    "ValorTotal": 1349.91
+  },
+  {
+    "Nome": "Lucas",
+    "Sobrenome": "Medes",
+    "Suite": "Master",
+    "QuantidadeSuites": 2,
+    "QuantidadePessoas": 6,
+    "DiasReservados": 9,
+    "ValorTotal": 2699.82
+  },
+  {
+    "Nome": "Sabrine",
+    "Sobrenome": "Souza",
+    "Suite": "Master",
+    "QuantidadeSuites": 2,
+    "QuantidadePessoas": 4,
+    "DiasReservados": 11,
+    "ValorTotal": 2969.802
+  },
+  {
+    "Nome": "Luana",
+    "Sobrenome": "Gomes",
+    "Suite": "Master",
+    "QuantidadeSuites": 2,
+    "QuantidadePessoas": 9,
+    "DiasReservados": 11,
+    "ValorTotal": 2969.802
+  },
+  {
+    "Nome": "Lara",
+    "Sobrenome": "Alves",
+    "Suite": "Master",
+    "QuantidadeSuites": 2,
+    "QuantidadePessoas": 7,
+    "DiasReservados": 5,
+    "ValorTotal": 1499.90
+  }
+]

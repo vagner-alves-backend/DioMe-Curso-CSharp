@@ -11,7 +11,7 @@ namespace HospedagemDeHotel_MinhaVersao.Models
         private readonly Suite _suite = new();
         private int dias = 0;
         private int _quantidadeDePessoas = 0;
-        private int _quantidadeSuites = 0;
+        private int _quantidadeSuites = 1;
         private readonly decimal _valorSuite = 149.99M;
         private decimal _valorTotal = 0;
         public void DadosHospede()
