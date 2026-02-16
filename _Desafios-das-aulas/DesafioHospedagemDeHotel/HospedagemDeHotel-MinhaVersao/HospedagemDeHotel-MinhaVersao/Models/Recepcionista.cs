@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Threading.Tasks;
 
 namespace HospedagemDeHotel_MinhaVersao.Models
@@ -13,6 +14,7 @@ namespace HospedagemDeHotel_MinhaVersao.Models
         private int _quantidadeDePessoas = 0;
         private int _quantidadeSuites = 1;
         private readonly decimal _valorSuite = 149.99M;
+        private int _numberRegistro = 1000;
         private decimal _valorTotal = 0;
         public void DadosHospede()
         {
@@ -24,9 +26,12 @@ namespace HospedagemDeHotel_MinhaVersao.Models
             bool reservaConcluida = DadosDaReserva();
             if (reservaConcluida)
             {
+                Console.Clear();
+                SetSuite();
                 CadastrarHospedes(new(_registro.Name, _registro.Sobrenome));
                 CalcularValorTotal();
-                SetNota(new(_registro.Name, _registro.Sobrenome, _suite.Tiposuite, _quantidadeSuites, _quantidadeDePessoas, dias, _valorTotal));
+                NumeroDeRegistro();
+                SetNota(new(_registro.Name, _registro.Sobrenome, _suite.Tiposuite, _quantidadeSuites, _quantidadeDePessoas, dias, _numberRegistro, _valorTotal));
             }
         }
         private bool DadosDaReserva()
@@ -38,7 +43,7 @@ namespace HospedagemDeHotel_MinhaVersao.Models
             string? diasInfo = Console.ReadLine();
             dias = ValidNumber(diasInfo);
 
-            Console.Write("Quantas pessoas fiaram hospedadas na suite? ");
+            Console.Write("Quantas pessoas ficaram hospedadas na suite? ");
             string? hospedesQuantidade = Console.ReadLine();
             _quantidadeDePessoas = ValidNumber(hospedesQuantidade);
             if (_quantidadeDePessoas > _suite.Capacidade)
@@ -109,6 +114,7 @@ namespace HospedagemDeHotel_MinhaVersao.Models
                     $"Quantidade de suites:  {reserva.QuantidadeSuites}\n"+
                     $"Quantidade de pessoas: {reserva.QuantidadePessoas}\n"+
                     $"Dias reservados:       {reserva.DiasReservados}\n"+
+                    $"N° Registro:           {reserva.NumeroDoRegistro}\n"+
                     $"Valor total:           {reserva.ValorTotal:C}\n"+
                     "..........................................."
                 );
@@ -121,13 +127,11 @@ namespace HospedagemDeHotel_MinhaVersao.Models
             Console.WriteLine("--Cadastre uma suite...");
             Console.Write("Tipo da suite..: ");
             _suite.Tiposuite = Console.ReadLine();
-            Console.Write("Capacidade..: ");
-            string? capacidadeInfo = Console.ReadLine();
-            _suite.Capacidade = ValidNumber(capacidadeInfo);
             _suite.Valordiaria = _valorSuite;
 
             CadastrarSuite(_suite);
         }
+        private void NumeroDeRegistro() => _numberRegistro+=1;
         public void CalcularValorTotal()
         {
             if (dias <= 10)

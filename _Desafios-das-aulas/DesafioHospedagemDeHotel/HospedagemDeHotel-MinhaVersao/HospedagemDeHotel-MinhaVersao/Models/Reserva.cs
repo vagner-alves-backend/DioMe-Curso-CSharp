@@ -8,7 +8,7 @@ namespace HospedagemDeHotel_MinhaVersao.Models
     public class Reserva
     {
         private readonly List<Pessoa> _hospedes = [];
-        private List<NotasDasReservas> _notas = [];
+        protected List<NotasDasReservas> _notas = [];
         private Suite _suite = new();
 
         protected void CadastrarHospedes(Pessoa hospede) => _hospedes.Add(hospede);
