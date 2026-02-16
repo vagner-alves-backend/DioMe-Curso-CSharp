@@ -3,40 +3,40 @@
     "Nome": "Vágner",
     "Sobrenome": "Alves",
     "Suite": "Master",
-    "QuantidadeSuites": 3,
-    "QuantidadePessoas": 14,
-    "DiasReservados": 11,
+    "QuantidadeSuites": 7,
+    "QuantidadePessoas": 34,
+    "DiasReservados": 12,
     "NumeroDoRegistro": 1001,
-    "ValorTotal": 4454.703
+    "ValorTotal": 11339.244
   },
   {
-    "Nome": "Lucas",
-    "Sobrenome": "Mendes",
-    "Suite": "Alfa",
-    "QuantidadeSuites": 9,
-    "QuantidadePessoas": 45,
-    "DiasReservados": 23,
-    "NumeroDoRegistro": 1002,
-    "ValorTotal": 27943.137
+    "Nome": "Sabrine",
+    "Sobrenome": "Souza",
+    "Suite": "Premio",
+    "QuantidadeSuites": 2,
+    "QuantidadePessoas": 6,
+    "DiasReservados": 3,
+    "NumeroDoRegistro": 1003,
+    "ValorTotal": 899.94
   },
   {
     "Nome": "Sofia",
     "Sobrenome": "Valverde",
-    "Suite": "Premio",
+    "Suite": "Alfa",
     "QuantidadeSuites": 2,
-    "QuantidadePessoas": 9,
-    "DiasReservados": 30,
-    "NumeroDoRegistro": 1003,
-    "ValorTotal": 8099.460
+    "QuantidadePessoas": 2,
+    "DiasReservados": 7,
+    "NumeroDoRegistro": 1004,
+    "ValorTotal": 2099.86
   },
   {
-    "Nome": "Marcos",
-    "Sobrenome": "Felipe",
+    "Nome": "Lucas",
+    "Sobrenome": "Mendes",
     "Suite": "Holf",
     "QuantidadeSuites": 2,
-    "QuantidadePessoas": 6,
-    "DiasReservados": 3,
-    "NumeroDoRegistro": 1001,
-    "ValorTotal": 899.94
+    "QuantidadePessoas": 8,
+    "DiasReservados": 1,
+    "NumeroDoRegistro": 1005,
+    "ValorTotal": 299.98
   }
 ]

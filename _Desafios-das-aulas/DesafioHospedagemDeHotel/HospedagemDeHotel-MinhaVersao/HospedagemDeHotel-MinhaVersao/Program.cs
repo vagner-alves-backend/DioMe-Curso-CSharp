@@ -5,28 +5,52 @@ Recepcionista recepcao = new();
 recepcao.GetReservasJson();
 Console.Clear();
 recepcao.GetHospedesJson();
+recepcao.NumeroRegistroAtual();
 
 int suites = 5;
-string? registrarMaisUm = "";
-while (recepcao.ObterQuantidadeDeHospedes() < suites)
+string? opcao = "";
+bool _continue = true;
+while (_continue)
 {
-    Console.Clear();
     Console.Write(
-        "---Deseja Registrar uma nova reserva?\n"+
-        "[1] Sim\n"+
-        "[2] Não..: "
+        "\t-- Deseja...\n"+
+        "[1] Criar uma reserva\n"+
+        "[2] Pesquisar por uma reserva\n"+
+        "[3] Ver Todas as reservas\n"+
+        "[4] Remover uma reserva\n"+
+        "[5] Finaliza o programa\n"+
+        "--> "
     );
-    registrarMaisUm = Console.ReadLine();
+    opcao = Console.ReadLine();
     Console.Clear();
-
-    if (registrarMaisUm == "1")
+    switch (opcao)
     {
-        recepcao.DadosHospede();
-    } else
-    {
-        suites = -1;
+        case "1":
+            if (recepcao.ObterQuantidadeDeHospedes() < suites)
+            {
+                recepcao.DadosHospede();
+                Console.Clear();
+            } else
+            {
+                Console.WriteLine("Não há suítes disponíveis no momento.");
+            }
+            break;
+        case "2":
+            recepcao.PesquisarReserva();
+            break;
+        case "3":
+            recepcao.ListaDeHospedes();
+            break;
+        case "4":
+            recepcao.RemoverRegistro();
+            break;
+        case "5":
+            _continue = false;
+            break;
+        default:
+            Console.WriteLine("Opcão não encontrada, favor informe uma opção valida.");
+            break;
     }
 }
 Console.Clear();
 recepcao.SetReservasJson();
-recepcao.ListaDeHospedes();

@@ -14,10 +14,11 @@ namespace HospedagemDeHotel_MinhaVersao.Models
         private int _quantidadeDePessoas = 0;
         private int _quantidadeSuites = 1;
         private readonly decimal _valorSuite = 149.99M;
-        private int _numberRegistro = 1000;
+        private int _numberRegistro = 0;
         private decimal _valorTotal = 0;
         public void DadosHospede()
         {
+            Console.Clear();
             Console.WriteLine("--Informe dados de cadastro do hospede...");
             Console.Write("Name..: ");
             _registro.Name = Console.ReadLine();
@@ -26,7 +27,6 @@ namespace HospedagemDeHotel_MinhaVersao.Models
             bool reservaConcluida = DadosDaReserva();
             if (reservaConcluida)
             {
-                Console.Clear();
                 SetSuite();
                 CadastrarHospedes(new(_registro.Name, _registro.Sobrenome));
                 CalcularValorTotal();
@@ -36,16 +36,15 @@ namespace HospedagemDeHotel_MinhaVersao.Models
         }
         private bool DadosDaReserva()
         {
-            bool reservaValida = true;
             Console.Clear();
+            bool reservaValida = true;
             Console.WriteLine("\t--Dados da reserva do hospede...");
             Console.Write($"Deseja reservar quantos dias senho(a) {_registro.Name} ? ");
-            string? diasInfo = Console.ReadLine();
-            dias = ValidNumber(diasInfo);
+            dias = ValidNumber(Console.ReadLine());
 
             Console.Write("Quantas pessoas ficaram hospedadas na suite? ");
-            string? hospedesQuantidade = Console.ReadLine();
-            _quantidadeDePessoas = ValidNumber(hospedesQuantidade);
+            _quantidadeDePessoas = ValidNumber(Console.ReadLine());
+
             if (_quantidadeDePessoas > _suite.Capacidade)
             {
                 Console.Clear();
@@ -55,8 +54,8 @@ namespace HospedagemDeHotel_MinhaVersao.Models
                     "------------------------------------------------------------------------\n"+
                     "-Deseja reservar suites para todas essas pessoas em seu registro[s/n]: "
                 );
-                string? remanejarPessoas = Console.ReadLine();
-                if (remanejarPessoas?.ToLower() == "s")
+
+                if (Console.ReadLine()?.ToLower() == "s")
                 {
                     int quantSuites = 1;
                     for (int index = _quantidadeDePessoas; index > _suite.Capacidade; index-=5)
@@ -73,8 +72,8 @@ namespace HospedagemDeHotel_MinhaVersao.Models
                 }
 
                 Console.Clear();
-                string? reservaTexto = reservaValida ? "Reserva concluida com sucesso." : "Reserva invalida, favor tente novamente...";
-                Console.WriteLine(reservaTexto);
+                string? reservaTexto = reservaValida ? "Reserva concluida com sucesso..." : "Reserva invalida, favor tente novamente...";
+                Console.Write(reservaTexto);
                 Thread.Sleep(2000);
             }
             return reservaValida;
@@ -105,6 +104,7 @@ namespace HospedagemDeHotel_MinhaVersao.Models
         }
         public void ListaDeHospedes()
         {
+            Console.Clear();
             Console.WriteLine("----Essa é a lista de hospedes presentes no hotel..: ");
             foreach(NotasDasReservas reserva in GetReservas())
             {
@@ -124,6 +124,7 @@ namespace HospedagemDeHotel_MinhaVersao.Models
         public void SetSuite() => DadosSuite();
         private void DadosSuite()
         {
+            Console.Clear();
             Console.WriteLine("--Cadastre uma suite...");
             Console.Write("Tipo da suite..: ");
             _suite.Tiposuite = Console.ReadLine();
@@ -132,6 +133,59 @@ namespace HospedagemDeHotel_MinhaVersao.Models
             CadastrarSuite(_suite);
         }
         private void NumeroDeRegistro() => _numberRegistro+=1;
+        public void PesquisarReserva()
+        {
+            Console.Clear();
+            Console.WriteLine("\t--Encontre a reserva...");
+            Console.Write("N° Reserva..: ");
+            string? registroInfo = Console.ReadLine();
+            int registro = ValidNumber(registroInfo);
+            bool registroEncontrado = GetReservas().Any(p => p.NumeroDoRegistro == registro);
+            if (registroEncontrado)
+            {
+                var dadosDaReserva = GetReservas().FirstOrDefault(p => p.NumeroDoRegistro == registro);
+                Console.WriteLine(
+                    $"Nome:                  {dadosDaReserva?.Nome} {dadosDaReserva?.Sobrenome}\n"+
+                    $"Suite:                 {dadosDaReserva?.Suite}\n"+
+                    $"Quantidade de Suites:  {dadosDaReserva?.QuantidadeSuites}\n"+
+                    $"Quantidade de Pessoas: {dadosDaReserva?.QuantidadePessoas}\n"+
+                    $"Dias reservados:       {dadosDaReserva?.DiasReservados}\n"+
+                    $"N° Reserva:            {dadosDaReserva?.NumeroDoRegistro}\n"+
+                    $"Valor total:           {dadosDaReserva?.ValorTotal:C}"
+                );
+            } else
+            {
+                Console.WriteLine("\tReserva não encontrada...");
+            }
+        }
+        public void RemoverRegistro()
+        {
+            Console.Clear();
+            Console.WriteLine("\t--Remover Registro...");
+            Console.Write("N° Registro..: ");
+            int registro = ValidNumber(Console.ReadLine());
+            bool registroEncontrado = _notas.Any(p => p.NumeroDoRegistro == registro);
+            if (registroEncontrado)
+            {
+                var reserva = _notas.FirstOrDefault(p => p.NumeroDoRegistro == registro) ?? new();
+                _notas.Remove(reserva);
+                Console.WriteLine(
+                    $"\t--Reserva N° {registro}, foi removida...\n"+
+                    $"Nome:                  {reserva?.Nome} {reserva?.Sobrenome}\n"+
+                    $"Suite:                 {reserva?.Suite}\n"+
+                    $"Quantidade de Suites:  {reserva?.QuantidadeSuites}\n"+
+                    $"Quantidade de Pessoas: {reserva?.QuantidadePessoas}\n"+
+                    $"Dias reservados:       {reserva?.DiasReservados}\n"+
+                    $"N° Reserva:            {reserva?.NumeroDoRegistro}\n"+
+                    $"Valor total:           {reserva?.ValorTotal:C}"
+                );
+            } else
+            {
+                Console.WriteLine("Registro não encontrado.");
+            }
+        }
+
+        public void NumeroRegistroAtual() => _numberRegistro = ObterQuantidadeDeHospedes() != 0 ? _numberRegistro = _notas[ObterQuantidadeDeHospedes() -1].NumeroDoRegistro : 1000;
         public void CalcularValorTotal()
         {
             if (dias <= 10)
