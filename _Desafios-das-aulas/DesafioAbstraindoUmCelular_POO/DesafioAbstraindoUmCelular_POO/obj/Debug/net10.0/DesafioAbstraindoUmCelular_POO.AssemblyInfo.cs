@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DesafioAbstraindoUmCelular_POO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef1e71e1798d1437cf5b1faf3e1a407b45b031ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+756a7542fc61c7238b66a7b48139224a0038fcc5")]
 [assembly: System.Reflection.AssemblyProductAttribute("DesafioAbstraindoUmCelular_POO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DesafioAbstraindoUmCelular_POO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
