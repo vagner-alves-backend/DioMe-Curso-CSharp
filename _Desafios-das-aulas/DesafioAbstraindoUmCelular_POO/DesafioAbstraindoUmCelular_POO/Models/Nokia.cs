@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,29 +8,51 @@ namespace DesafioAbstraindoUmCelular_POO.Models
 {
     public class Nokia : Smartphone
     {
-        public List<string?> App = [];
         public List<(string? modelo, string? number)> CaixaPostal = [];
-        public Nokia (string? number, string? modelo, string? imei, int memoria) : base (number, modelo, imei, memoria) {}
-        public sealed override void InstalarAplicativo(string? nameApp)
+        public List<string?> Aplicativos = [];
+
+        public Nokia (string? numero, string? modelo, string? imei, int memoria) : base (numero, modelo, imei, memoria) {}
+
+        public sealed override void ReceberLigacao(string? modelo, string? numero) => CaixaPostal.Add(new(modelo, numero));
+        public void PrintCaixaPostal ()
         {
-            Console.Clear();
-            Console.Write(
-                "-- Deseja Instalar o app --\n"+
-                "[1] Sim              [2] Não\n"+
-                "--> "
-            );
-            string? opcao = Console.ReadLine();
-            if (opcao == "1")
+            if (CaixaPostal.Count != 0)
             {
-                App.Add(new(nameApp));
-                Console.WriteLine(".................................");
-                Console.WriteLine("\tO app foi instalado...");
+                Console.WriteLine("--- As ligações perdidas são...");
+                foreach ((string? modelo, string? number) in CaixaPostal)
+                {
+                    Console.WriteLine($"\t{modelo} - {number}");
+                }
+                Console.WriteLine("-------------------------------");
             } else
             {
-                Console.WriteLine(".................................");
-                Console.WriteLine("\tO app não foi instalado...");
+                Console.WriteLine("-- Não a ligações perdidas no momento... --");
             }
-            Console.WriteLine("---------------------------------");
+        }
+        public void PrintAplicativos ()
+        {
+            if (Aplicativos.Count != 0)
+            {
+                Console.WriteLine("--- Os aplicativos instalados são...");
+                foreach (string? app in Aplicativos)
+                {
+                    Console.WriteLine(app);
+                }
+                Console.WriteLine("-------------------------------");
+            } else
+            {
+                Console.WriteLine("-- Não a aplicativos instalados no momento... --");
+            }
+        }
+        public sealed override void InstalarAplicativo(string? nameApp)
+        {
+            if (!string.IsNullOrWhiteSpace(nameApp))
+            {
+                Aplicativos.Add(new(nameApp));
+            } else
+            {
+                Console.WriteLine("Favor informe o nome do aplicativo que deseja instalar.");
+            }
         }
     }
 }
