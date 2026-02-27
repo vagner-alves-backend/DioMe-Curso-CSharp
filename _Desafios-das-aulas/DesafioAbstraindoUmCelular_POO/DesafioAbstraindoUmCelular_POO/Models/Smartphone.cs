@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 
 namespace DesafioAbstraindoUmCelular_POO.Models
 {
-    public abstract class Smartphone
+    public abstract class Smartphone 
     {
         private string? _number;
         private string? _modelo;
@@ -50,6 +50,7 @@ namespace DesafioAbstraindoUmCelular_POO.Models
                 _memoria = value;
             }
         }
+        public Smartphone() : this ("10000000", "Modelo", "IMEI", 32) {}
         public Smartphone(string? number, string? modelo, string? imei, int memoria) 
         {
             this.Number = number;
@@ -57,14 +58,8 @@ namespace DesafioAbstraindoUmCelular_POO.Models
             this.IMEI = imei;
             this.Memoria = memoria;
         }
-        public void Ligar()
-        {
-            Console.Clear();
-            Console.Write("Olá usuaro, informe o número da pessoa para qual você deseja ligar: ");
-            string? number = Console.ReadLine();
-            Console.Write($"Você ligou para: {number}");
-        }
-        public void ReceberLigacao() => Console.WriteLine($"Você recebeu uma ligação de {_number}");
+        public void Ligar(string? numero, string? modelo) {}
         public abstract void InstalarAplicativo(string nomeApp);
+        
     }
 }

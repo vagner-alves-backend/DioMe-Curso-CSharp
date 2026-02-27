@@ -7,7 +7,8 @@ namespace DesafioAbstraindoUmCelular_POO.Models
 {
     public class Nokia : Smartphone
     {
-        private List<string?> _app = [];
+        public List<string?> App = [];
+        public List<(string? modelo, string? number)> CaixaPostal = [];
         public Nokia (string? number, string? modelo, string? imei, int memoria) : base (number, modelo, imei, memoria) {}
         public sealed override void InstalarAplicativo(string? nameApp)
         {
@@ -20,7 +21,7 @@ namespace DesafioAbstraindoUmCelular_POO.Models
             string? opcao = Console.ReadLine();
             if (opcao == "1")
             {
-                _app.Add(new(nameApp));
+                App.Add(new(nameApp));
                 Console.WriteLine(".................................");
                 Console.WriteLine("\tO app foi instalado...");
             } else
@@ -29,7 +30,6 @@ namespace DesafioAbstraindoUmCelular_POO.Models
                 Console.WriteLine("\tO app não foi instalado...");
             }
             Console.WriteLine("---------------------------------");
-        }   
-        public List<string?> GetApp() => _app;
+        }
     }
 }
