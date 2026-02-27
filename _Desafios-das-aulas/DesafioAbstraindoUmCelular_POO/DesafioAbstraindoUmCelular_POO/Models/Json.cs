@@ -146,7 +146,7 @@ namespace DesafioAbstraindoUmCelular_POO.Models
             _nokia = JsonConvert.DeserializeObject<List<Nokia>>(registrosNokia) ?? [];
 
             string? registrosiPhone = File.ReadAllText(_pathiPhone);
-            _iPhone = JsonConvert.DeserializeObject<List<IPhone>>(registrosNokia) ?? [];
+            _iPhone = JsonConvert.DeserializeObject<List<IPhone>>(registrosiPhone) ?? [];
         }
         public void Serializacao ()
         {
